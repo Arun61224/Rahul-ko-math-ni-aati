@@ -8,6 +8,9 @@ discounted_price = st.number_input("Discounted Price (Final Price) dalein:", min
 
 # Calculate button
 if st.button("Check Discount"):
+    # Ye raha aapka popup!
+    st.toast("Terko Itna bhi ni aata 🤦‍♂️")
+    
     if selling_price > 0:
         if discounted_price > selling_price:
             st.error("Discounted Price, Selling Price se zyada nahi ho sakta!")
